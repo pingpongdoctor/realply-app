@@ -1,5 +1,6 @@
 import "./globals.scss";
 import { Roboto } from "next/font/google";
+import NavigationComponent from "./components/NavigationBar/NavigationComponent";
 
 //SET UP ROBOTO GOOGLE FONT
 const roboto = Roboto({
@@ -21,7 +22,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={roboto.className}>{children}</body>
+      <body className={roboto.className}>
+        <NavigationComponent />
+        {children}
+      </body>
     </html>
   );
 }
