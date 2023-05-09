@@ -1,13 +1,21 @@
 import "./globals.scss";
-import { Quicksand } from "next/font/google";
+import { Sulphur_Point, Roboto } from "next/font/google";
 import NavigationComponent from "./components/NavigationComponent/NavigationComponent";
 
-//SET UP ROBOTO GOOGLE FONT
-const quicksand = Quicksand({
-  weight: ["300", "400", "500", "600", "700"],
-  style: ["normal"],
+//SET UP SULPHURE POINT GOOGLE FONT
+const sulphurPoint = Sulphur_Point({
+  weight: ["300", "400", "700"],
   subsets: ["latin"],
   display: "swap",
+  variable: "--font-sulphur-point",
+});
+
+//SET UP ROBOTO GOOGLE FONT TO USE IT WITH VARIABLE
+const roboto = Roboto({
+  weight: ["300", "400", "500", "700"],
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-roboto",
 });
 
 //SET UP METADATA
@@ -21,9 +29,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body className={quicksand.className}>
+    <html lang="en" className={`${sulphurPoint.variable} ${roboto.variable}`}>
+      <body>
+        {/* NAVIGATION COMPONENT APPEARS ON EVERY PAGE OF THE WEBSITE */}
         <NavigationComponent />
+
         {children}
       </body>
     </html>
