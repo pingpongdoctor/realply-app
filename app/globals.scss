@@ -7,47 +7,36 @@
 body {
   margin: 0;
   color: $text-color-1;
+  line-height: 1.5;
+  font-family: var(--font-sulphur-point);
 }
 
 h1 {
-  font-size: 2rem;
-  line-height: 2.5;
+  font-size: 2.25rem;
+  line-height: 1.875rem;
   font-weight: 700;
   margin-top: 1.5rem;
   margin-bottom: 1rem;
-  // @include tablet {
-  //   margin-top: 2rem;
-  //   margin-bottom: 1.5rem;
-  // }
 }
 
 h2 {
-  font-size: 1.6rem;
-  line-height: 2.25;
-  font-weight: 600;
+  font-size: 1.75rem;
+  line-height: 1.875rem;
+  font-weight: 700;
   margin-top: 1.5rem;
   margin-bottom: 1rem;
-  // @include tablet {
-  //   margin-top: 2rem;
-  //   margin-bottom: 1.5rem;
-  // }
 }
 
 h3 {
-  font-size: 1.25rem;
-  line-height: 2.25;
-  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 1.875rem;
+  font-weight: 400;
   margin-top: 1.5rem;
   margin-bottom: 1rem;
-  // @include tablet {
-  //   margin-top: 2rem;
-  //   margin-bottom: 1.5rem;
-  // }
 }
 
 p {
-  font-size: 1rem;
-  line-height: 1.5;
-  font-weight: 400;
+  font-size: 1.125rem;
+  font-weight: 300;
   margin-bottom: 1rem;
 }
