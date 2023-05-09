@@ -1,7 +1,7 @@
-import styles from "./NavigationBar.module.scss";
+import styles from "./NavigationLinks.module.scss";
 import NavigationLink from "../NavigationLink/NavigationLink";
 
-export default function NavigationBar() {
+export default function NavigationLinks() {
   //DEFINE THE ARR FOR LINK INFORMATION
   const linkInforArr: LinkInforObj[] = [
     { content: "Messages", src: "message.png" },
@@ -11,7 +11,7 @@ export default function NavigationBar() {
     { content: "Helps?", src: "danger.png" },
   ];
   return (
-    <ul className={styles.navBar}>
+    <ul className={styles.navLinks}>
       {/* DASHBOARD LINK */}
       <NavigationLink
         navIconSrc="/assets/icons/grid-3.png"

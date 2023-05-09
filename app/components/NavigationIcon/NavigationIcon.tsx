@@ -1,4 +1,4 @@
-import styles from "./NavigationBarIcon.module.scss";
+import styles from "./NavigationIcon.module.scss";
 import Image from "next/image";
 
 interface Props {
@@ -6,7 +6,7 @@ interface Props {
   navBarIconClassName?: string;
 }
 
-export default function NavigationBarIcon({
+export default function NavigationIcon({
   navBarIconSrc,
   navBarIconClassName,
 }: Props) {

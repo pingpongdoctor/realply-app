@@ -1,7 +1,8 @@
 import LogoComponent from "../LogoComponent/LogoComponent";
 import styles from "./NavigationComponent.module.scss";
-import NavigationBar from "../NavigationBar/NavigationBar";
+import NavigationLinks from "../NavigationLinks/NavigationLinks";
 import ButtonComponent from "../ButtonComponent/ButtonComponent";
+import NavigationIcon from "../NavigationIcon/NavigationIcon";
 
 export default function NavigationComponent() {
   return (
@@ -11,9 +12,11 @@ export default function NavigationComponent() {
         <LogoComponent />
         <p className={styles.navigationComponentLogoText}>Realply</p>
       </div>
+
       {/* NAVIGATION BAR COMPONENT */}
-      <NavigationBar />
-      {/* FREE TRIAL INFORMATION */}
+      <NavigationLinks />
+
+      {/* FREE TRIAL BOX */}
       <div className={styles.navigationComponentTrialWrapper}>
         <p className={styles.navigationComponentTrialText}>
           Your free trial is about to end in <br /> <span> 10 days</span>
@@ -25,8 +28,15 @@ export default function NavigationComponent() {
           To keep your projects running after the trial end, upgrade to a paid
           option.
         </p>
+
         {/* BUTTON CLIENT COMPONENT */}
         <ButtonComponent btnContent="Upgrade" />
+      </div>
+
+      {/* LOGOUT LINK */}
+      <div className={styles.navigationComponentLogoutDiv}>
+        <NavigationIcon navBarIconSrc="/assets/icons/send-square.svg" />
+        <p className={styles.navigationComponentLogoutText}>Logout</p>
       </div>
     </div>
   );

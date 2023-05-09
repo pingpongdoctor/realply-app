@@ -52,4 +52,15 @@
     color: $free-trial-text-color;
     margin: 0;
   }
+
+  &LogoutDiv {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    margin-top: 2rem;
+  }
+
+  &LogoutText {
+    margin: 0;
+  }
 }
