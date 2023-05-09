@@ -1,10 +1,19 @@
 import styles from "./LogoComponent.module.scss";
-import logo from "../../../public/assets/icons/logo.svg";
+import Image from "next/image";
 
 interface Props {
   logoClassName?: string;
 }
 
 export default function LogoComponent({ logoClassName }: Props) {
-  return <img src={logo} alt="logo-icon" className={styles.logoClassName} />;
+  return (
+    <Image
+      className={`${logoClassName ? styles[logoClassName] : ""}`}
+      src="/assets/icons/logo.svg"
+      alt="logo"
+      priority={true}
+      width={33.29}
+      height={32}
+    />
+  );
 }
