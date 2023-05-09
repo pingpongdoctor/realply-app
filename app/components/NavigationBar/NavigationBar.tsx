@@ -2,12 +2,6 @@ import styles from "./NavigationBar.module.scss";
 import NavigationLink from "../NavigationLink/NavigationLink";
 
 export default function NavigationBar() {
-  //INTERFACE FOR LINK OBJECT
-  interface LinkInforObj {
-    content: string;
-    src: string;
-  }
-
   //DEFINE THE ARR FOR LINK INFORMATION
   const linkInforArr: LinkInforObj[] = [
     { content: "Messages", src: "message.png" },
@@ -26,8 +20,9 @@ export default function NavigationBar() {
       />
 
       {/* THE OTHER LINKS */}
-      {linkInforArr.map((linkObj) => (
+      {linkInforArr.map((linkObj, index) => (
         <NavigationLink
+          key={index}
           navIconSrc={`/assets/icons/${linkObj.src}`}
           navLinkContent={linkObj.content}
         />
