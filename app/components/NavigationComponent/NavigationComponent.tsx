@@ -1,6 +1,7 @@
 import LogoComponent from "../LogoComponent/LogoComponent";
 import styles from "./NavigationComponent.module.scss";
 import NavigationBar from "../NavigationBar/NavigationBar";
+import ButtonComponent from "../ButtonComponent/ButtonComponent";
 
 export default function NavigationComponent() {
   return (
@@ -24,6 +25,8 @@ export default function NavigationComponent() {
           To keep your projects running after the trial end, upgrade to a paid
           option.
         </p>
+        {/* BUTTON CLIENT COMPONENT */}
+        <ButtonComponent btnContent="Upgrade" />
       </div>
     </div>
   );

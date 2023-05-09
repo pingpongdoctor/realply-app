@@ -5,7 +5,6 @@ import NavigationBarIcon from "../NavigationBarIcon/NavigationBarIcon";
 interface Props {
   navIconSrc: string;
   navLinkContent: string;
-  navTextClassName?: string;
   navLinkClassName?: string;
 }
 
