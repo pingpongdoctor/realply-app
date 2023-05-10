@@ -1,0 +1,14 @@
+@use "../../styles/variables" as *;
+
+.dashboardComponent {
+  width: 371px;
+  background-color: $background-color-1;
+  height: 100vh;
+  padding: 2.7rem 2rem 3rem 2rem;
+
+  &Heading {
+    margin-top: 0;
+    margin-left: 1rem;
+    margin-bottom: 3rem;
+  }
+}

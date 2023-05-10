@@ -2,7 +2,7 @@ import LogoComponent from "../LogoComponent/LogoComponent";
 import styles from "./NavigationComponent.module.scss";
 import NavigationLinks from "../NavigationLinks/NavigationLinks";
 import ButtonComponent from "../ButtonComponent/ButtonComponent";
-import NavigationIcon from "../NavigationIcon/NavigationIcon";
+import IconComponent from "../IconComponent/IconComponent";
 
 export default function NavigationComponent() {
   return (
@@ -35,7 +35,7 @@ export default function NavigationComponent() {
 
       {/* LOGOUT LINK */}
       <div className={styles.navigationComponentLogoutDiv}>
-        <NavigationIcon navBarIconSrc="/assets/icons/send-square.svg" />
+        <IconComponent IconSrc="/assets/icons/send-square.svg" />
         <p className={styles.navigationComponentLogoutText}>Logout</p>
       </div>
     </div>
