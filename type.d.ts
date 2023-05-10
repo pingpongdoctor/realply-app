@@ -8,3 +8,8 @@ interface DashBoardInforObj {
   inforNumber: number;
   inforPercent: number;
 }
+
+interface BarChartLabelInforObj {
+  labelContent: string;
+  labelColorClassname: string;
+}

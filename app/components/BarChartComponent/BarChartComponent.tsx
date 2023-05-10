@@ -12,10 +12,12 @@ import { Bar } from "react-chartjs-2";
 
 ChartJS.register(CategoryScale, LinearScale, BarElement, Tooltip);
 
+//DEFINE OPTIONS OBJECT FOR THE BAR CHART
 export const options = {
   responsive: true,
   //false value allows changing the width and height freely
   maintainAspectRatio: false,
+
   y: {
     max: 800,
     min: 0,
@@ -26,8 +28,8 @@ export const options = {
   },
 };
 
+//DEFINE DATA FOR THE BAR CHART
 const labels = [""];
-
 export const data = {
   labels,
   datasets: [
@@ -49,7 +51,7 @@ export const data = {
   ],
 };
 
-export default function ColumnChartComponent() {
+export default function BarChartComponent() {
   return (
     <div>
       <Bar
@@ -57,7 +59,6 @@ export default function ColumnChartComponent() {
         options={options}
         data={data}
       />
-      <div></div>
     </div>
   );
 }
