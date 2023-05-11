@@ -1,6 +1,8 @@
 import styles from "./CampaignAnalyticsComponent.module.scss";
 import DateSelectionComponent from "../DateSelectionComponent/DateSelectionComponent";
 import CampaignInforList from "../CampaignInforList/CampaignInforList";
+import { DoughnutChartComponent } from "../DoughnutChartComponent/DoughnutChartComponent";
+import { RadarChartComponent } from "../RadarChartComponent/RadarChartComponent";
 
 export default function CampaignAnalyticsComponent() {
   return (
@@ -15,6 +17,12 @@ export default function CampaignAnalyticsComponent() {
 
       {/* CAMPAIGN ANALYTICS INFORMATION LIST */}
       <CampaignInforList />
+
+      {/* BIG FLEX CONTAINER FOR DOUGHNUT AND RADAR CHARTS */}
+      <div>
+        <DoughnutChartComponent />
+        <RadarChartComponent />
+      </div>
     </div>
   );
 }
