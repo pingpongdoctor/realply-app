@@ -4,11 +4,11 @@ import NavigationLink from "../NavigationLink/NavigationLink";
 export default function NavigationLinks() {
   //DEFINE THE ARR FOR LINK INFORMATION
   const linkInforArr: LinkInforObj[] = [
-    { content: "Messages", src: "message.png" },
-    { content: "Calendar", src: "calculator.png" },
-    { content: "Campaigns", src: "flash.png" },
-    { content: "Settings", src: "setting-3.png" },
-    { content: "Helps?", src: "danger.png" },
+    { content: "Messages", iconSrc: "message.png" },
+    { content: "Calendar", iconSrc: "calculator.png" },
+    { content: "Campaigns", iconSrc: "flash.png" },
+    { content: "Settings", iconSrc: "setting-3.png" },
+    { content: "Helps?", iconSrc: "danger.png" },
   ];
   return (
     <ul className={styles.navLinks}>
@@ -23,7 +23,7 @@ export default function NavigationLinks() {
       {linkInforArr.map((linkObj, index) => (
         <NavigationLink
           key={index}
-          navIconSrc={`/assets/icons/${linkObj.src}`}
+          navIconSrc={`/assets/icons/${linkObj.iconSrc}`}
           navLinkContent={linkObj.content}
         />
       ))}

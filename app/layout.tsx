@@ -1,5 +1,5 @@
 import "./globals.scss";
-import { Sulphur_Point, Roboto } from "next/font/google";
+import { Sulphur_Point, Roboto, Rubik } from "next/font/google";
 import NavigationComponent from "./components/NavigationComponent/NavigationComponent";
 
 //SET UP SULPHURE POINT GOOGLE FONT
@@ -18,6 +18,14 @@ const roboto = Roboto({
   variable: "--font-roboto",
 });
 
+//SET UP ROBOTO GOOGLE FONT TO USE IT WITH VARIABLE
+const rubik = Rubik({
+  weight: ["300", "400"],
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-rubik",
+});
+
 //SET UP METADATA
 export const metadata = {
   title: "Reapply Dashboard",
@@ -29,7 +37,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${sulphurPoint.variable} ${roboto.variable}`}>
+    <html
+      lang="en"
+      className={`${sulphurPoint.variable} ${roboto.variable} ${rubik.variable}`}
+    >
       <body>
         {/* NAVIGATION COMPONENT APPEARS ON EVERY PAGE OF THE WEBSITE */}
         <NavigationComponent />

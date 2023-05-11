@@ -1,0 +1,29 @@
+@use "../../styles/variables" as *;
+
+.barChartLabel {
+  display: flex;
+  gap: 0.3rem;
+
+  &SquareDiv {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 5px;
+  }
+
+  &SquareDivConnections {
+    background-color: $chart-connections-color;
+  }
+
+  &SquareDivFollowers {
+    background-color: $chart-follows-color;
+  }
+
+  &SquareDivInvites {
+    background-color: $chart-invite-color;
+  }
+
+  &Text {
+    margin: 0;
+    font-size: 13px;
+  }
+}

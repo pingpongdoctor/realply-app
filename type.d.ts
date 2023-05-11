@@ -1,4 +1,15 @@
 interface LinkInforObj {
   content: string;
-  src: string;
+  iconSrc: string;
+}
+
+interface DashBoardInforObj {
+  inforName: string;
+  inforNumber: number;
+  inforPercent: number;
+}
+
+interface BarChartLabelInforObj {
+  labelContent: string;
+  labelColorClassname: string;
 }

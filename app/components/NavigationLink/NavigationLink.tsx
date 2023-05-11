@@ -1,5 +1,5 @@
 import styles from "./NavigationLink.module.scss";
-import NavigationIcon from "../NavigationIcon/NavigationIcon";
+import IconComponent from "../IconComponent/IconComponent";
 
 //DEFINE PROPS
 interface Props {
@@ -16,7 +16,7 @@ export default function NavigationLink({
   return (
     <li className={styles.navLink}>
       {/* THE ICON OF THE LINK */}
-      <NavigationIcon navBarIconSrc={navIconSrc} />
+      <IconComponent IconSrc={navIconSrc} />
 
       {/* THE TEXT OF THE LINK */}
       <p
