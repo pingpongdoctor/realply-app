@@ -22,6 +22,8 @@
     background-color: $statistic-color;
     padding: 6px 10px;
     border-radius: 8px;
+    gap: 12px;
+    align-items: center;
   }
 
   &Number {
