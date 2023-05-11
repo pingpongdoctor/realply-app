@@ -1,30 +1,6 @@
 import "./globals.scss";
-import { Sulphur_Point, Roboto, Rubik } from "next/font/google";
+import { sulphurPoint, roboto, rubik } from "./styles/fonts";
 import NavigationComponent from "./components/NavigationComponent/NavigationComponent";
-
-//SET UP SULPHURE POINT GOOGLE FONT
-const sulphurPoint = Sulphur_Point({
-  weight: ["300", "400", "700"],
-  subsets: ["latin"],
-  display: "swap",
-  variable: "--font-sulphur-point",
-});
-
-//SET UP ROBOTO GOOGLE FONT TO USE IT WITH VARIABLE
-const roboto = Roboto({
-  weight: ["300", "400", "500", "700"],
-  subsets: ["latin"],
-  display: "swap",
-  variable: "--font-roboto",
-});
-
-//SET UP ROBOTO GOOGLE FONT TO USE IT WITH VARIABLE
-const rubik = Rubik({
-  weight: ["300", "400"],
-  subsets: ["latin"],
-  display: "swap",
-  variable: "--font-rubik",
-});
 
 //SET UP METADATA
 export const metadata = {
@@ -44,7 +20,6 @@ export default function RootLayout({
       <body>
         {/* NAVIGATION COMPONENT APPEARS ON EVERY PAGE OF THE WEBSITE */}
         <NavigationComponent />
-
         {children}
       </body>
     </html>
