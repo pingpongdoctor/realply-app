@@ -16,7 +16,7 @@ export default function NavigationLink({
   return (
     <li className={styles.navLink}>
       {/* THE ICON OF THE LINK */}
-      <IconComponent IconSrc={navIconSrc} />
+      <IconComponent iconSrc={navIconSrc} />
 
       {/* THE TEXT OF THE LINK */}
       <p

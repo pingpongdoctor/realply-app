@@ -35,7 +35,7 @@ export default function NavigationComponent() {
 
       {/* LOGOUT LINK */}
       <div className={styles.navigationComponentLogoutDiv}>
-        <IconComponent IconSrc="/assets/icons/send-square.svg" />
+        <IconComponent iconSrc="/assets/icons/send-square.svg" />
         <p className={styles.navigationComponentLogoutText}>Logout</p>
       </div>
     </div>
