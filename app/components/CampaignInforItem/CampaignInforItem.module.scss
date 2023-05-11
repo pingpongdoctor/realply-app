@@ -1,0 +1,18 @@
+@use "../../styles/variables" as *;
+
+.campaignInforItem {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+
+  &Name {
+    color: $text-color-2;
+    margin: 0;
+  }
+
+  &Value {
+    font-family: var(--font-rubik);
+    font-size: 1.75rem;
+    margin: 0;
+  }
+}

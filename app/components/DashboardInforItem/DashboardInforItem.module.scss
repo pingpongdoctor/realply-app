@@ -5,6 +5,11 @@
   flex-direction: column;
   border-bottom: 1px solid $border-bottom-color;
   padding-bottom: 1rem;
+  gap: 0.3rem;
+
+  &:last-child {
+    border-bottom: none;
+  }
 
   &Name {
     margin: 0;

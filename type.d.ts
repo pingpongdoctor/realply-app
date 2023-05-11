@@ -5,8 +5,13 @@ interface LinkInforObj {
 
 interface DashBoardInforObj {
   inforName: string;
-  inforNumber: number;
-  inforPercent: number;
+  inforValue: number;
+  inforValueInPercent: number;
+}
+
+interface CampaignAnalyticsInforObj {
+  inforName: string;
+  inforValue: number;
 }
 
 interface BarChartLabelInforObj {

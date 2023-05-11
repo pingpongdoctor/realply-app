@@ -1,7 +1,10 @@
 .campaignAnalyticsComponent {
-  display: flex;
-  justify-content: space-between;
   margin: 4rem 1rem 0;
+
+  &SmallFlexContainer {
+    display: flex;
+    justify-content: space-between;
+  }
 
   &Heading {
     margin: 0;

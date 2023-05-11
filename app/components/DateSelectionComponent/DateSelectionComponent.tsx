@@ -31,14 +31,11 @@ export default function DateSelectionComponent() {
       {/* MUI CALENDAR COMPONENT */}
       <LocalizationProvider dateAdapter={AdapterDayjs}>
         <DateRangePicker
+          className={styles.dateSelectionComponentCalendar}
           sx={{
             ".MuiOutlinedInput-root": {
               borderRadius: 8,
               fontSize: 15,
-              backgroundColor: "#f8f8f8",
-              width: 130,
-              padding: 0,
-              height: 32,
               paddingLeft: 1.22,
               fontFamily: "var(--font-sulphur-point)",
             },
@@ -60,6 +57,7 @@ export default function DateSelectionComponent() {
         />
       </LocalizationProvider>
 
+      {/* ARROW SQUARE DOWN ICON */}
       <IconClientComponent
         iconSrc="/assets/icons/arrow-square-down.png"
         iconWidth={18}
