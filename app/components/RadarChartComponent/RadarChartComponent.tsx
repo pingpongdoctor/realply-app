@@ -34,6 +34,7 @@ const options: RadarChartOptions = {
       labels: {
         usePointStyle: true,
         pointStyle: "circle",
+        color: "#94979a",
         padding: 30,
         boxWidth: 6,
         boxHeight: 6,
@@ -41,7 +42,6 @@ const options: RadarChartOptions = {
           size: 10,
           family: "var(--font-roboto)",
         },
-        color: "#94979a",
       },
     },
   },
@@ -50,7 +50,6 @@ const options: RadarChartOptions = {
     r: {
       max: 90,
       min: 10,
-      suggestedMin: 10,
       beginAtZero: false,
       pointLabels: {
         color: "#00000099",

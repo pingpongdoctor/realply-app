@@ -7,7 +7,7 @@ import { Doughnut } from "react-chartjs-2";
 ChartJS.register(ArcElement, Tooltip, Legend);
 
 export const data = {
-  labels: ["", "", ""],
+  labels: ["Invitations sent", "Pending invitations", "Profile views"],
   datasets: [
     {
       data: [30, 30, 30],
@@ -20,14 +20,23 @@ type DoughnutChartOptions = Parameters<typeof Doughnut>[0]["options"];
 
 const options: DoughnutChartOptions = {
   maintainAspectRatio: false,
+  responsive: true,
   plugins: {
     legend: {
-      rtl: true,
+      rtl: false,
       position: "bottom",
+
       labels: {
         usePointStyle: true,
         pointStyle: "circle",
-        padding: 20,
+        color: "#94979a",
+        padding: 30,
+        boxWidth: 8,
+        boxHeight: 8,
+        font: {
+          size: 10,
+          family: "var(--font-roboto)",
+        },
       },
     },
   },
