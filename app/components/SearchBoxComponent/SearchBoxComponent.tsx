@@ -2,7 +2,7 @@
 
 import styles from "./SearchBoxComponent.module.scss";
 
-//SEARCH COMPONENT IS A CLIENT COMPONENT SINCE IT NEEDS USE INTERACTIVITY
+//SEARCH COMPONENT IS A CLIENT COMPONENT SINCE IT NEEDS USER INTERACTIVITY
 export default function SearchBoxComponent() {
   return (
     <input

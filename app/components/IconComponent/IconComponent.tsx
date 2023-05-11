@@ -17,7 +17,7 @@ export default function IconComponent({
   return (
     <Image
       src={iconSrc}
-      alt="nav-bar-icon"
+      alt="icon"
       priority={false}
       width={iconWidth ? iconWidth : 20}
       height={iconHeight ? iconHeight : 20}
