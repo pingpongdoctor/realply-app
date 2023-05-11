@@ -1,6 +1,7 @@
 "use client";
 
 import styles from "./BarChartComponent.module.scss";
+
 import {
   Chart as ChartJS,
   CategoryScale,
@@ -53,7 +54,7 @@ export const data = {
 
 export default function BarChartComponent() {
   return (
-    <div>
+    <div className={styles.barChartComponent}>
       <Bar
         style={{ width: "100%", height: "305px" }}
         options={options}

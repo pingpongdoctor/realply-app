@@ -11,8 +11,9 @@ export default function CampaignInforList() {
 
   return (
     <ul className={styles.campaignInforList}>
-      {campaignInforArr.map((campaignInforObj) => (
+      {campaignInforArr.map((campaignInforObj, index) => (
         <CampaignInforItem
+          key={index}
           campaignInforItemName={campaignInforObj.inforName}
           campaignInforItemValue={campaignInforObj.inforValue}
         />
