@@ -2,19 +2,26 @@ import styles from "./IconComponent.module.scss";
 import Image from "next/image";
 
 interface Props {
-  IconSrc: string;
-  IconClassName?: string;
+  iconSrc: string;
+  iconClassName?: string;
+  iconWidth?: number;
+  iconHeight?: number;
 }
 
-export default function IconComponent({ IconSrc, IconClassName }: Props) {
+export default function IconComponent({
+  iconSrc,
+  iconClassName,
+  iconWidth,
+  iconHeight,
+}: Props) {
   return (
     <Image
-      src={IconSrc}
+      src={iconSrc}
       alt="nav-bar-icon"
       priority={false}
-      width={20}
-      height={20}
-      className={IconClassName ? styles[IconClassName] : ""}
+      width={iconWidth ? iconWidth : 20}
+      height={iconHeight ? iconHeight : 20}
+      className={iconClassName ? styles[iconClassName] : ""}
     />
   );
 }

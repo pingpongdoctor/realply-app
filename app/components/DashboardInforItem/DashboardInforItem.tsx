@@ -19,10 +19,11 @@ export default function DashboardInforItem({
         <p className={styles.dashboardInforItemNumber}>{inforNumber}</p>
         <div className={styles.dashboardInforItemSmallWrapper}>
           <IconComponent
-            IconSrc="/assets/icons/trend-up.png"
-            IconClassName="iconOfDashBoardInfor"
+            iconSrc="/assets/icons/trend-up.png"
+            iconWidth={16}
+            iconHeight={16}
           />
-          <p className={styles.dashboardInforItemPercent}>{inforPercent}</p>
+          <p className={styles.dashboardInforItemPercent}>{inforPercent}%</p>
         </div>
       </div>
     </li>

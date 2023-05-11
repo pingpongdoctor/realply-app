@@ -12,12 +12,12 @@ export default function DashboardInforList() {
     {
       inforName: "Followers",
       inforNumber: 2667,
-      inforPercent: 56,
+      inforPercent: 0,
     },
     {
       inforName: "Connect Invites",
       inforNumber: 100,
-      inforPercent: 56,
+      inforPercent: 60,
     },
   ];
   return (
