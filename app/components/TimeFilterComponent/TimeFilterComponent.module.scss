@@ -13,5 +13,10 @@
   background-image: url("/assets/icons/arrow-square-down.png");
   background-size: 14px;
   background-repeat: no-repeat;
-  background-position: 82% 50%;
+  background-position: 80% 50%;
+
+  &BiggerWidth {
+    padding-right: 2.5rem;
+    background-position: 85% 50%;
+  }
 }

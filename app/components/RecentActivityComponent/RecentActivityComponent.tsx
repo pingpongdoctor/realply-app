@@ -5,8 +5,15 @@ import styles from "./RecentActivityComponent.module.scss";
 export default function RecentActivityComponent() {
   return (
     <div className={styles.recentActivityComponent}>
-      <h2 className={styles.recentActivityComponentHeading}>Recent Activity</h2>
-      <TimeFilterComponent />
+      {/* WRAPPER OF THE HEADING TEXT AND THE TIME FILTER */}
+      <div className={styles.recentActivityComponentWrapper}>
+        <h2 className={styles.recentActivityComponentHeading}>
+          Recent Activity
+        </h2>
+        <TimeFilterComponent />
+      </div>
+
+      {/* RECENT ACTIVITY LIST */}
       <RecentActivityList />
     </div>
   );
