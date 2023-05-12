@@ -19,7 +19,7 @@ export default function CampaignAnalyticsComponent() {
       <CampaignInforList />
 
       {/* BIG FLEX CONTAINER FOR DOUGHNUT AND RADAR CHARTS */}
-      <div>
+      <div className={styles.campaignAnalyticsComponentBigFlexContainer}>
         <DoughnutChartComponent />
         <RadarChartComponent />
       </div>

@@ -9,4 +9,10 @@
   &Heading {
     margin: 0;
   }
+
+  &BigFlexContainer {
+    display: flex;
+    align-items: center;
+    gap: 7rem;
+  }
 }

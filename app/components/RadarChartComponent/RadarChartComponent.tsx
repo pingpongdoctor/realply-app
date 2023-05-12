@@ -24,7 +24,7 @@ ChartJS.register(
 type RadarChartOptions = Parameters<typeof Radar>[0]["options"];
 
 const options: RadarChartOptions = {
-  maintainAspectRatio: false,
+  maintainAspectRatio: true,
   responsive: true,
   plugins: {
     legend: {
@@ -35,12 +35,12 @@ const options: RadarChartOptions = {
         usePointStyle: true,
         pointStyle: "circle",
         color: "#94979a",
-        padding: 30,
+        padding: 16,
         boxWidth: 6,
         boxHeight: 6,
         font: {
-          size: 10,
-          family: "var(--font-roboto)",
+          size: 8,
+          family: "Roboto",
         },
       },
     },
@@ -53,11 +53,11 @@ const options: RadarChartOptions = {
       beginAtZero: false,
       pointLabels: {
         color: "#00000099",
-        font: { size: 8, family: "var(--font-roboto)" },
+        font: { size: 8, family: "Roboto" },
       },
       ticks: {
         color: "#94979a",
-        font: { size: 8, family: "var(--font-roboto)" },
+        font: { size: 8, family: "Roboto" },
         stepSize: 10,
         count: 9,
       },
@@ -69,17 +69,17 @@ export const data = {
   labels: ["January", "February", "March", "April", "May", "June", "July"],
   datasets: [
     {
-      label: "Campaign 2",
-      data: [40, 80, 70, 40, 10, 80, 63],
-      backgroundColor: "rgba(197, 199, 246, 0.3)",
-      borderColor: "#C5C7F6",
-      borderWidth: 1,
-    },
-    {
       label: "Campaign 1",
       data: [60, 20, 40, 10, 70, 60, 60],
       backgroundColor: "rgba(194, 236, 193, 0.3)",
       borderColor: "#c2ecc1",
+      borderWidth: 1,
+    },
+    {
+      label: "Campaign 2",
+      data: [40, 80, 70, 40, 10, 80, 63],
+      backgroundColor: "rgba(197, 199, 246, 0.3)",
+      borderColor: "#C5C7F6",
       borderWidth: 1,
     },
   ],
@@ -88,11 +88,7 @@ export const data = {
 export function RadarChartComponent() {
   return (
     <div>
-      <Radar
-        options={options}
-        style={{ width: "100%", aspectRatio: "1.06 / 1" }}
-        data={data}
-      />
+      <Radar options={options} style={{ width: 285 }} data={data} />
     </div>
   );
 }

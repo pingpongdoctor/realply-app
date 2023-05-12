@@ -19,7 +19,7 @@ export const data = {
 type DoughnutChartOptions = Parameters<typeof Doughnut>[0]["options"];
 
 const options: DoughnutChartOptions = {
-  maintainAspectRatio: false,
+  maintainAspectRatio: true,
   responsive: true,
   plugins: {
     legend: {
@@ -30,13 +30,17 @@ const options: DoughnutChartOptions = {
         usePointStyle: true,
         pointStyle: "circle",
         color: "#94979a",
-        padding: 30,
+        padding: 16,
         boxWidth: 8,
         boxHeight: 8,
         font: {
-          size: 10,
-          family: "var(--font-roboto)",
+          size: 8,
+          family: "Roboto",
         },
+      },
+
+      title: {
+        display: true,
       },
     },
   },
@@ -44,12 +48,8 @@ const options: DoughnutChartOptions = {
 
 export function DoughnutChartComponent() {
   return (
-    <div>
-      <Doughnut
-        options={options}
-        style={{ width: "100%", aspectRatio: "1 / 1" }}
-        data={data}
-      />
+    <div className={styles.doughnutChartComponent}>
+      <Doughnut options={options} style={{ width: 254 }} data={data} />
     </div>
   );
 }

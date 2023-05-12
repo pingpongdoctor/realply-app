@@ -14,9 +14,6 @@ export default function DashboardGeneralComponent() {
 
       {/* BAR CHART */}
       <BarChartComponent />
-
-      {/* BAR CHART LABELS */}
-      <BarChartLabels />
     </div>
   );
 }
