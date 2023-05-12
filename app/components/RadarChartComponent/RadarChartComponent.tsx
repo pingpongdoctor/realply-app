@@ -21,8 +21,10 @@ ChartJS.register(
   Legend
 );
 
+//GET DATA TYPE FOR THE OPTIONS
 type RadarChartOptions = Parameters<typeof Radar>[0]["options"];
 
+//DEFINE THE OPTION OBJECT
 const options: RadarChartOptions = {
   maintainAspectRatio: true,
   responsive: true,
@@ -65,6 +67,7 @@ const options: RadarChartOptions = {
   },
 };
 
+//DEFINE DATA OBJECT
 export const data = {
   labels: ["January", "February", "March", "April", "May", "June", "July"],
   datasets: [

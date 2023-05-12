@@ -6,6 +6,7 @@ import { Doughnut } from "react-chartjs-2";
 
 ChartJS.register(ArcElement, Tooltip, Legend);
 
+//DEFINE DATA
 export const data = {
   labels: ["Invitations sent", "Pending invitations", "Profile views"],
   datasets: [
@@ -16,8 +17,10 @@ export const data = {
   ],
 };
 
+//GET DATA TYPE FOR THE OPTIONS
 type DoughnutChartOptions = Parameters<typeof Doughnut>[0]["options"];
 
+//DEFINE OPTIONS
 const options: DoughnutChartOptions = {
   maintainAspectRatio: true,
   responsive: true,

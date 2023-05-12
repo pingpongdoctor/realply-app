@@ -1,7 +1,5 @@
 "use client";
 
-import styles from "./BarChartComponent.module.scss";
-
 import {
   Chart as ChartJS,
   CategoryScale,
@@ -13,10 +11,10 @@ import { Bar } from "react-chartjs-2";
 
 ChartJS.register(CategoryScale, LinearScale, BarElement, Tooltip);
 
-//DEFINE OPTIONS OBJECT FOR THE BAR CHART
-
+//GET DATA TYPE FOR THE OPTIONS
 type BarChartOptions = Parameters<typeof Bar>[0]["options"];
 
+//DEFINE OPTIONS
 export const options: BarChartOptions = {
   maintainAspectRatio: false,
   responsive: true,

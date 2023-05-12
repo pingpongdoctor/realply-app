@@ -1,8 +1,16 @@
 @use "../../styles/variables" as *;
+@use "../../styles/mixins" as *;
 
 .DashboardDetailedComponent {
   flex-grow: 1;
   padding: 3rem 2rem 0;
+
+  &Container {
+    @include breakpoint(1512px) {
+      max-width: 864px;
+      margin: 0 auto;
+    }
+  }
 
   &BellIconWrapper {
     width: 45px;
