@@ -18,3 +18,16 @@ interface BarChartLabelInforObj {
   labelContent: string;
   labelColorClassname: string;
 }
+
+interface RecentActivityInforObj {
+  activityType: "normal" | "task";
+  activityAvaSrc: string;
+  activityUserName: string;
+  activityAction: string;
+}
+
+interface RecentTaskInforObj {
+  activityType: "normal" | "task";
+  recentTaskMessage: string;
+  recentTaskDueDate: string;
+}

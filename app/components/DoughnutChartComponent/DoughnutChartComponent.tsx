@@ -30,7 +30,7 @@ const options: DoughnutChartOptions = {
         usePointStyle: true,
         pointStyle: "circle",
         color: "#94979a",
-        padding: 16,
+        padding: 8,
         boxWidth: 8,
         boxHeight: 8,
         font: {
@@ -49,7 +49,7 @@ const options: DoughnutChartOptions = {
 export function DoughnutChartComponent() {
   return (
     <div className={styles.doughnutChartComponent}>
-      <Doughnut options={options} style={{ width: 254 }} data={data} />
+      <Doughnut options={options} style={{ width: 224 }} data={data} />
     </div>
   );
 }

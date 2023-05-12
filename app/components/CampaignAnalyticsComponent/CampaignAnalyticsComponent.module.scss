@@ -1,5 +1,5 @@
 .campaignAnalyticsComponent {
-  margin: 4rem 1rem 0;
+  margin: 2.5rem 1rem 0;
 
   &SmallFlexContainer {
     display: flex;
@@ -13,6 +13,6 @@
   &BigFlexContainer {
     display: flex;
     align-items: center;
-    gap: 7rem;
+    justify-content: space-between;
   }
 }

@@ -35,7 +35,7 @@ const options: RadarChartOptions = {
         usePointStyle: true,
         pointStyle: "circle",
         color: "#94979a",
-        padding: 16,
+        padding: 12,
         boxWidth: 6,
         boxHeight: 6,
         font: {
@@ -87,8 +87,8 @@ export const data = {
 
 export function RadarChartComponent() {
   return (
-    <div>
-      <Radar options={options} style={{ width: 285 }} data={data} />
+    <div className={styles.radarChartComponent}>
+      <Radar options={options} style={{ width: 255 }} data={data} />
     </div>
   );
 }
