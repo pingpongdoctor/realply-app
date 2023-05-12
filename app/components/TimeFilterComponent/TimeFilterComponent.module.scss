@@ -1,0 +1,22 @@
+@use "../../styles//variables" as *;
+
+.timeFilterComponent {
+  border: none;
+  outline: none;
+  background-color: $background-color-1;
+  height: 32px;
+  -webkit-appearance: none;
+  font-family: var(--font-sulphur-point);
+  padding-left: 1rem;
+  padding-right: 1.8rem;
+  border-radius: 8px;
+  background-image: url("/assets/icons/arrow-square-down.png");
+  background-size: 14px;
+  background-repeat: no-repeat;
+  background-position: 80% 50%;
+
+  &BiggerWidth {
+    padding-right: 2.5rem;
+    background-position: 85% 50%;
+  }
+}

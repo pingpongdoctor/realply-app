@@ -1,6 +1,7 @@
 "use client";
 
 import styles from "./BarChartComponent.module.scss";
+
 import {
   Chart as ChartJS,
   CategoryScale,
@@ -13,17 +14,43 @@ import { Bar } from "react-chartjs-2";
 ChartJS.register(CategoryScale, LinearScale, BarElement, Tooltip);
 
 //DEFINE OPTIONS OBJECT FOR THE BAR CHART
-export const options = {
-  responsive: true,
-  //false value allows changing the width and height freely
-  maintainAspectRatio: false,
 
-  y: {
-    max: 800,
-    min: 0,
-    ticks: {
-      // forces step size to be 100 units
-      stepSize: 100,
+type BarChartOptions = Parameters<typeof Bar>[0]["options"];
+
+export const options: BarChartOptions = {
+  maintainAspectRatio: false,
+  responsive: true,
+
+  plugins: {
+    legend: {
+      rtl: false,
+      position: "bottom",
+
+      labels: {
+        color: "#131313",
+        textAlign: "right",
+        boxPadding: 0.5,
+        boxWidth: 15,
+        boxHeight: 15,
+        useBorderRadius: true,
+        borderRadius: 5,
+        font: {
+          size: 12,
+        },
+      },
+    },
+  },
+
+  scales: {
+    y: {
+      beginAtZero: true,
+      min: 0,
+      max: 800,
+      ticks: {
+        stepSize: 100,
+        color: "#94979a",
+        font: { size: 12, family: "Rubik" },
+      },
     },
   },
 };
@@ -34,16 +61,19 @@ export const data = {
   labels,
   datasets: [
     {
+      label: "Connections",
       data: [420],
       backgroundColor: "#c2ecc1",
       categoryPercentage: 0.92,
     },
     {
+      label: "Followers",
       data: [290],
       backgroundColor: "#1f1f1f",
       categoryPercentage: 0.92,
     },
     {
+      label: "Connect Invites",
       data: [740],
       backgroundColor: "#c5c7f6",
       categoryPercentage: 0.92,
@@ -55,7 +85,7 @@ export default function BarChartComponent() {
   return (
     <div>
       <Bar
-        style={{ width: "100%", height: "305px" }}
+        style={{ width: "100%", height: "330px" }}
         options={options}
         data={data}
       />

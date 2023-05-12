@@ -1,5 +1,6 @@
 import CampaignAnalyticsComponent from "../CampaignAnalyticsComponent/CampaignAnalyticsComponent";
 import IconComponent from "../IconComponent/IconComponent";
+import RecentActivityComponent from "../RecentActivityComponent/RecentActivityComponent";
 import SearchBoxComponent from "../SearchBoxComponent/SearchBoxComponent";
 import UserInforComponent from "../UserInforComponent/UserInforComponent";
 import styles from "./DashboardDetailedComponent.module.scss";
@@ -21,6 +22,9 @@ export default function DashboardDetailedComponent() {
 
       {/* CAMPAIGN ANALYTICS */}
       <CampaignAnalyticsComponent />
+
+      {/* RECENT ACTIVITY COMPONENT */}
+      <RecentActivityComponent />
     </div>
   );
 }

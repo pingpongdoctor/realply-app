@@ -5,11 +5,29 @@ interface LinkInforObj {
 
 interface DashBoardInforObj {
   inforName: string;
-  inforNumber: number;
-  inforPercent: number;
+  inforValue: number;
+  inforValueInPercent: number;
+}
+
+interface CampaignAnalyticsInforObj {
+  inforName: string;
+  inforValue: number;
 }
 
 interface BarChartLabelInforObj {
   labelContent: string;
   labelColorClassname: string;
+}
+
+interface RecentActivityInforObj {
+  activityType: "normal" | "task";
+  activityAvaSrc: string;
+  activityUserName: string;
+  activityAction: string;
+}
+
+interface RecentTaskInforObj {
+  activityType: "normal" | "task";
+  recentTaskMessage: string;
+  recentTaskDueDate: string;
 }

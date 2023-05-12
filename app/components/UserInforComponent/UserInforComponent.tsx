@@ -3,7 +3,7 @@ import AvatarComponent from "../AvatarComponent/AvatarComponent";
 import IconComponent from "../IconComponent/IconComponent";
 
 export default function UserInforComponent() {
-  const avaSrc = process.env.AVATAR_URL || "";
+  const avaSrc = process.env.AVATAR_URL_1 || "";
 
   return (
     <div className={styles.userInforComponent}>

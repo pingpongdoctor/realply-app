@@ -2,7 +2,7 @@
 
 .DashboardDetailedComponent {
   flex-grow: 1;
-  padding: 3rem 2rem 1rem;
+  padding: 3rem 2rem 0;
 
   &BellIconWrapper {
     width: 45px;
@@ -13,7 +13,7 @@
     justify-content: center;
     align-items: center;
     margin-left: auto;
-    margin-right: 1rem;
+    margin-right: 2rem;
   }
 
   &FlexContainer {

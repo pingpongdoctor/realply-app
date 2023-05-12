@@ -4,7 +4,6 @@
   width: 332px;
   height: 42px;
   font-size: 1rem;
-  color: $text-color-2;
   background-image: url("/assets/icons/search-normal.png");
   background-repeat: no-repeat;
   background-size: 18px;
@@ -15,4 +14,7 @@
   border-radius: 10px;
   border: none;
   outline: none;
+  &::placeholder {
+    color: $text-color-2;
+  }
 }
