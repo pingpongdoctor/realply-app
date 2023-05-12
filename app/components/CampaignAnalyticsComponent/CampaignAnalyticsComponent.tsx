@@ -3,7 +3,6 @@ import DateSelectionComponent from "../DateSelectionComponent/DateSelectionCompo
 import CampaignInforList from "../CampaignInforList/CampaignInforList";
 import { DoughnutChartComponent } from "../DoughnutChartComponent/DoughnutChartComponent";
 import { RadarChartComponent } from "../RadarChartComponent/RadarChartComponent";
-import { Suspense } from "react";
 
 export default function CampaignAnalyticsComponent() {
   return (
@@ -21,13 +20,8 @@ export default function CampaignAnalyticsComponent() {
 
       {/* BIG FLEX CONTAINER FOR DOUGHNUT AND RADAR CHARTS */}
       <div className={styles.campaignAnalyticsComponentBigFlexContainer}>
-        <Suspense fallback={<p>Loading Chart...</p>}>
-          <DoughnutChartComponent />
-        </Suspense>
-
-        <Suspense fallback={<p>Loading Chart...</p>}>
-          <RadarChartComponent />
-        </Suspense>
+        <DoughnutChartComponent />
+        <RadarChartComponent />
       </div>
     </div>
   );
