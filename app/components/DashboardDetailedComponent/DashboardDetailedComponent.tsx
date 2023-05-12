@@ -4,6 +4,7 @@ import RecentActivityComponent from "../RecentActivityComponent/RecentActivityCo
 import SearchBoxComponent from "../SearchBoxComponent/SearchBoxComponent";
 import UserInforComponent from "../UserInforComponent/UserInforComponent";
 import styles from "./DashboardDetailedComponent.module.scss";
+import { Suspense } from "react";
 
 export default function DashboardDetailedComponent() {
   return (
@@ -22,10 +23,14 @@ export default function DashboardDetailedComponent() {
         </div>
 
         {/* CAMPAIGN ANALYTICS */}
-        <CampaignAnalyticsComponent />
+        <Suspense fallback={<p>Loading ananlytics...</p>}>
+          <CampaignAnalyticsComponent />
+        </Suspense>
 
         {/* RECENT ACTIVITY COMPONENT */}
-        <RecentActivityComponent />
+        <Suspense fallback={<p>Loading activities...</p>}>
+          <RecentActivityComponent />
+        </Suspense>
       </div>
     </div>
   );
