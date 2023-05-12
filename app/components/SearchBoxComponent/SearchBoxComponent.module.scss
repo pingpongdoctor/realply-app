@@ -1,0 +1,20 @@
+@use "../../styles/variables" as *;
+
+.searchBoxComponent {
+  width: 332px;
+  height: 42px;
+  font-size: 1rem;
+  background-image: url("/assets/icons/search-normal.png");
+  background-repeat: no-repeat;
+  background-size: 18px;
+  background-position: 96% 50%;
+  background-color: $background-color-1;
+  padding-left: 1.5rem;
+  padding-right: 2rem;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  &::placeholder {
+    color: $text-color-2;
+  }
+}

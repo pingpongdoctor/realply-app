@@ -1,0 +1,21 @@
+@use "../../styles/variables" as *;
+
+.recentTaskActivityItem {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  border-bottom: 1px solid $border-bottom-color;
+  padding-bottom: 1rem;
+
+  &:last-child {
+    border-bottom: none;
+  }
+
+  &Text {
+    margin: 0;
+  }
+
+  &TextBold {
+    font-weight: 700;
+  }
+}

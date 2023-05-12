@@ -1,11 +1,8 @@
-import "./globals.css";
-import { Inter } from "next/font/google";
+import "./globals.scss";
+import { sulphurPoint, roboto, rubik } from "./styles/fonts";
+import NavigationComponent from "./components/NavigationComponent/NavigationComponent";
 
-const inter = Inter({
-  subsets: ["latin"],
-  weight: ["400", "700"],
-});
-
+//SET UP METADATA
 export const metadata = {
   title: "Reapply Dashboard",
 };
@@ -16,8 +13,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html
+      lang="en"
+      className={`${sulphurPoint.variable} ${roboto.variable} ${rubik.variable}`}
+    >
+      <body>
+        {/* NAVIGATION COMPONENT APPEARS ON EVERY PAGE OF THE WEBSITE */}
+        <NavigationComponent />
+        {children}
+      </body>
     </html>
   );
 }

@@ -1,0 +1,26 @@
+@use "../../styles/variables" as *;
+
+.navLink {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  position: relative;
+
+  &Text {
+    margin: 0;
+  }
+
+  &Selected {
+    color: $text-color-selected;
+  }
+
+  &Selected::before {
+    content: "";
+    width: 5px;
+    height: 30px;
+    background-color: $text-color-selected;
+    position: absolute;
+    left: -3.3rem;
+    top: -0.3rem;
+  }
+}

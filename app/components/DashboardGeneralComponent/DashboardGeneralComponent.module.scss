@@ -1,0 +1,12 @@
+@use "../../styles/variables" as *;
+
+.dashboardGeneralComponent {
+  width: 371px;
+  background-color: $background-color-1;
+  height: 100vh;
+  padding: 2.7rem 2rem 3rem;
+
+  &Heading {
+    margin: 0 0 3rem 1rem;
+  }
+}

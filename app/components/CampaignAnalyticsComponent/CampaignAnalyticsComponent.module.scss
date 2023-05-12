@@ -1,0 +1,19 @@
+.campaignAnalyticsComponent {
+  margin: 2.5rem 1rem 0;
+
+  &SmallFlexContainer {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &Heading {
+    margin: 0;
+  }
+
+  &BigFlexContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 291.8px;
+  }
+}
