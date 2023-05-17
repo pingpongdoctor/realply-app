@@ -1,5 +1,4 @@
 import BarChartComponent from "../BarChartComponent/BarChartComponent";
-import BarChartLabels from "../BarChartLabels/BarChartLabels";
 import DashboardInforList from "../DashboardInforList/DashboardInforList";
 import styles from "./DashboardGeneralComponent.module.scss";
 
