@@ -14,11 +14,6 @@ interface CampaignAnalyticsInforObj {
   inforValue: number;
 }
 
-interface BarChartLabelInforObj {
-  labelContent: string;
-  labelColorClassname: string;
-}
-
 interface RecentActivityInforObj {
   activityType: "normal" | "task";
   activityAvaSrc: string;
