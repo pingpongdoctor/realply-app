@@ -2,13 +2,14 @@
 
 import styles from "./IconClientComponent.module.scss";
 import Image from "next/image";
+import React from "react";
 
 interface Props {
   iconSrc: string;
   iconClassName?: string;
   iconWidth?: number;
   iconHeight?: number;
-  iconOnClickHandler?: () => void;
+  iconOnClickHandler?: (e: React.MouseEvent<HTMLDivElement>) => void;
 }
 
 export default function IconClientComponent({

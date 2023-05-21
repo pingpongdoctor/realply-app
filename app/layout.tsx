@@ -4,7 +4,7 @@ import NavigationComponent from "./components/NavigationComponent/NavigationComp
 
 //SET UP METADATA
 export const metadata = {
-  title: "Reapply Dashboard",
+  title: "Reaply Dashboard",
 };
 
 export default function RootLayout({
